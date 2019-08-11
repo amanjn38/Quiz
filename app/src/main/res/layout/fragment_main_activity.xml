@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animalQuizlinearlayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivityFragment"
+    tools:showIn="@layout/activity_main"
+    android:background="#000"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/firstRowLinearLayout">
+
+
+        <Button
+
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="2"
+            />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="2"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/secondRowLinearLayout">
+
+
+        <Button
+
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="2"
+            />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="2"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/thirdRowLinearLayout">
+
+
+        <Button
+
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="2"
+            />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="2"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/question_text"
+        android:id="@+id/tvQuestionNumber"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_value"
+        android:textColor="#fff"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/ivAnimal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_value"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAnswer"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:textSize="38sp"
+        />
+
+
+</LinearLayout>
